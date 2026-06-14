@@ -1,0 +1,5 @@
+variable,variable_label,PCC_dBA,PCC_cost,abs_PCC_dBA
+fan_rpm,Blower Speed (RPM),0.891,-0.0033,0.891
+panel_damp_pct,Panel CLD Coverage (%),-0.7643,1.0,0.7643
+soundpack_dens,Sound Pack Density (kg/m³),-0.624,1.0,0.624
+fan_blades,Blade Count (LH+RH Blower),-0.1444,1.0,0.1444

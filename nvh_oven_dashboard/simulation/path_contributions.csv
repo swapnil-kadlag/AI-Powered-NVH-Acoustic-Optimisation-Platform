@@ -1,0 +1,10 @@
+path_id,path_name,path_type,source,ntf_col,coupling_db,source_dba,ntf_mean_db,path_dba,description,path_rank
+S1,Fan Mount → Top Panel,structural,convection_fan,NTF_fan_bracket_dBperN,-2.5,50.5,-15.4,32.6,Fan unbalance → bracket → top panel bending radiation,1
+S2,Fan Mount → Side Panels,structural,convection_fan,NTF_fan_bracket_dBperN,-4.0,50.5,-15.4,31.1,Fan vibration → side-wall flexural radiation,2
+A2,Duct Leakage → Sides,airborne,convection_fan,NTF_fan_bracket_dBperN,-6.0,50.5,-15.4,29.1,Fan airborne noise through duct-to-cavity leak,3
+A3,Vent Grille → Rear,airborne,cooling_fan,NTF_rear_panel_center_dBperN,-2.0,48.2,-18.2,28.0,Cooling fan direct airborne radiation through rear grille,4
+S5,Cooling Fan → Rear Grille,structural,cooling_fan,NTF_rear_panel_center_dBperN,-3.5,48.2,-18.2,26.5,Cooling fan BPF through rear grille,5
+A1,Door Seal Gap → Front,airborne,door_seal,NTF_door_latch_dBperN,0.0,37.3,-22.7,14.6,Direct airborne radiation through door perimeter gap,6
+S3,Magnetron → Rear Wall,structural,magnetron,NTF_magnetron_chassis_dBperN,-3.0,33.0,-18.7,11.3,Magnetron 100 Hz magnetic force → rear panel,7
+S4,Transformer → Base Plate,structural,transformer,NTF_transformer_pad_dBperN,-1.5,30.7,-22.8,6.3,Transformer 100/200 Hz hum → base → floor radiation,8
+A4,Magnetron Cavity → Interior,airborne,magnetron,NTF_magnetron_chassis_dBperN,-8.0,33.0,-18.7,6.3,Magnetron EMI-induced acoustic radiation inside cavity,9

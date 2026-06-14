@@ -1,0 +1,115 @@
+﻿SPR METHODOLOGY — SOURCE PATH RECEIVER ANALYSIS
+================================================
+Document: NVH-METH-002 | Revision: 2.0
+
+1. OVERVIEW
+-----------
+The Source-Path-Receiver (SPR) framework decomposes total receiver
+noise into individual source and transmission path contributions.
+This enables targeted noise reduction by addressing the dominant
+combinations first.
+
+Total noise level at receiver (logarithmic summation):
+  L_total = 10·log10( Σ_i 10^(L_path_i / 10) )
+
+2. SOURCE IDENTIFICATION
+------------------------
+Sources are ranked by energy contribution:
+  Energy share (%) = 10^(L_source/10) / 10^(L_total/10) × 100
+
+Dominant sources in domestic convection ovens:
+  1. Convection fan (aerodynamic + structural): typically 40–60%
+  2. Cooling fan (axial airborne + structural): typically 20–40%
+  3. Door seal gap radiation: typically 2–8%
+  4. Magnetron (100 Hz magnetic hum): typically 1–5%
+  5. Transformer (100/200 Hz hum): typically 0.5–2%
+
+3. TRANSMISSION PATH ANALYSIS (TPA)
+-------------------------------------
+Structural paths:
+  L_path_struct(f) = L_force(f) + NTF(f) + radiation_efficiency(f)
+  where NTF = Noise Transfer Function (dB/N), measured by impact hammer
+
+Airborne paths:
+  L_path_air(f) = L_source(f) - IL(f)
+  where IL = Insertion Loss of any barrier/absorber between source and receiver
+
+TPA decomposition equation:
+  L_total(f) = 10·log10( Σ_paths 10^(L_path(f)/10) )
+
+4. NTF MEASUREMENT PROCEDURE
+------------------------------
+Equipment: Impact hammer (PCB 086C03), MEMS microphone at receiver
+Procedure:
+  1. Suspend oven on compliant mounts (decouple from structure)
+  2. Apply hammer impacts at each excitation point
+  3. Measure acoustic response at driver's ear position (IEC 60704-1)
+  4. Compute H(f) = Gxy(f) / Gxx(f) [cross/auto-spectrum ratio]
+  5. NTF (dB/N) = 20·log10(|H(f)|)
+
+Key excitation points:
+  P1: Fan bracket (fan unbalance → structural)
+  P2: Cooling fan chassis
+  P3: Magnetron mounting flange
+  P4: Door latch mechanism
+  P5: Transformer foot
+
+5. ODS (OPERATIONAL DEFLECTION SHAPE)
+---------------------------------------
+ODS reveals which panels radiate most efficiently.
+  - Measure with scanning laser vibrometer or MEMS array
+  - Excite oven in normal operation
+  - Map displacement amplitude Uz(x,y) at 12 panel sensor points
+  - High ODS amplitude + high radiation efficiency → dominant radiator
+
+Typical oven ODS modes:
+  - Top panel breathing mode: f ≈ 120–180 Hz
+  - Side panel flexural: f ≈ 200–350 Hz
+  - Rear panel drum mode: f ≈ 80–150 Hz
+
+6. PATH RANKING & CRITICAL PATH IDENTIFICATION
+-----------------------------------------------
+Rank paths by dBA contribution:
+  Priority 1 (>30% energy): Immediate engineering action required
+  Priority 2 (10–30%):      Action within 3 months
+  Priority 3 (<10%):        Low priority, address if budget allows
+
+Decision matrix for path treatment:
+  Structural path dominant → Add isolators, constrained-layer damping
+  Airborne path dominant   → Add absorption, sealing, barrier mass
+
+
+7. ESI VA ONE AEROVIBRO-ACOUSTIC SIMULATION
+--------------------------------------------
+The MHC Oven blower noise prediction uses ESI VA One:
+
+Workflow:
+  1. CFD (steady RANS): Extract blade-surface pressure fluctuations at BPF
+     BPF = 40 blades × 3250 RPM / 60 = 2167 Hz
+  2. FEM sub-model (20–500 Hz):
+     - Blower housing structural modes
+     - Panel vibration response under blower unbalance force
+     - Constrained-layer damping (CLD) modelled via complex modulus
+  3. SEA sub-model (500–8000 Hz):
+     - Airborne path subsystems: cavity, panels, absorbers
+     - Sound pack absorption coefficient α from material database
+     - Receiver SPL computed at IEC 60704-1 reference point (1 m)
+  4. Coupling: FEM↔SEA junction at ~500 Hz (modal overlap factor M ≈ 1)
+
+Active design variables in VA One parametric study:
+  - fan_blades [32,36,40,44,48]: BPF shifts; harmonic content changes
+  - fan_rpm    [2000–4500 RPM]: dipole source level scales as RPM^2.5
+  - panel_damp_pct [0–80%]:    CLD loss factor η 0.01→0.15
+  - soundpack_dens [20–120 kg/m³]: SEA absorption α 0.4→0.95
+
+Fixed (constrained — not in parametric VA One study):
+  - mag_shield_kg = 0.15 kg  (space constraint — shield plate pre-decided)
+  - air_gap_mm    = 12 mm    (enclosure tooling freeze)
+  - isolator_K    = 8000 N/m (standard rubber foot, low marginal impact
+                               confirmed by VA One sensitivity sweep)
+
+VA One predicted noise reduction vs. baseline (60.0 dBA):
+  Fan RPM reduction 3250→2000: −4.8 dBA
+  Panel CLD 80% coverage:      −3.5 dBA
+  Soundpack density 120 kg/m³: −2.5 dBA
+  Combined (with cross-effects): −9.2 dBA → 50.8 dBA ✅

@@ -1,0 +1,9 @@
+priority,source,path,path_type,engineering_fix,dba_reduction,cost_usd,difficulty,lead_weeks,mechanism,roi_dba_per_usd
+🔴 Critical,convection_fan,Fan Mount → Top Panel,structural,Aerodynamic 44-blade skewed redesign,3.5,18,Medium,12,Reduced BPF tonal energy,0.194
+🟠 High,convection_fan,Fan Mount → Side Panels,structural,Aerodynamic 44-blade skewed redesign,3.5,18,Medium,12,Reduced BPF tonal energy,0.194
+🔴 Critical,convection_fan,Fan Mount → Top Panel,structural,Fan speed -10% + impeller re-match,2.5,2,Low,2,Fan noise ∝ RPM⁵; -10% ≈ -2 dBA,1.25
+🟠 High,convection_fan,Fan Mount → Side Panels,structural,Fan speed -10% + impeller re-match,2.5,2,Low,2,Fan noise ∝ RPM⁵; -10% ≈ -2 dBA,1.25
+🔴 Critical,convection_fan,Fan Mount → Top Panel,structural,Anti-vib mount (8 Shore-A rubber grommets),2.0,4,Low,4,Break structural path S1/S2,0.5
+🟠 High,convection_fan,Fan Mount → Side Panels,structural,Anti-vib mount (8 Shore-A rubber grommets),2.0,4,Low,4,Break structural path S1/S2,0.5
+🟡 Medium,convection_fan,Duct Leakage → Sides,airborne,Melamine liner inside fan duct (25 mm),2.0,6,Medium,6,Attenuate airborne BPF harmonics,0.333
+🟡 Medium,convection_fan,Duct Leakage → Sides,airborne,Duct sealing + flexible boot joint,1.5,3,Low,3,Eliminate A2 duct leakage,0.5

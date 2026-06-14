@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Large generated files
+nvh_oven_dashboard/reports/NVH_Report_*.pdf
+nvh_oven_dashboard/reports/nvh_report_debug.html
+nvh_oven_dashboard/reports/comprehensive/
+nvh_oven_dashboard/competition/chart_*.html
+nvh_oven_dashboard/rag_engine/index/

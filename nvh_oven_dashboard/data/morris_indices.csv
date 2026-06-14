@@ -1,0 +1,9 @@
+variable,variable_label,response,mu,mu_star,sigma
+fan_blades,Blade Count (LH+RH Blower),dBA,-0.3752,1.4819,1.884
+fan_rpm,Blower Speed (RPM),dBA,4.4366,4.4366,0.9776
+panel_damp_pct,Panel CLD Coverage (%),dBA,-2.7227,2.7227,1.5591
+soundpack_dens,Sound Pack Density (kg/m³),dBA,-1.7866,1.7866,0.6949
+fan_blades,Blade Count (LH+RH Blower),cost_index,0.1,0.1,0.0
+fan_rpm,Blower Speed (RPM),cost_index,0.0,0.0,0.0
+panel_damp_pct,Panel CLD Coverage (%),cost_index,0.35,0.35,0.0
+soundpack_dens,Sound Pack Density (kg/m³),cost_index,0.35,0.35,0.0

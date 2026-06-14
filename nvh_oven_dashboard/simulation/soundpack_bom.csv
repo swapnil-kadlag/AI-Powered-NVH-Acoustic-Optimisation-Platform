@@ -1,0 +1,7 @@
+zone,priority,area_m2,T_limit_C,primary_source,material,thickness_mm,NRC,SIL_A_dB,zone_cost_usd,zone_weight_kg,IL_63Hz,IL_125Hz,IL_250Hz,IL_500Hz,IL_1000Hz,IL_2000Hz,IL_4000Hz,IL_8000Hz
+Top Panel,1,0.07,250,convection_fan,Fiberglass Batt,50,0.95,13.1,0.56,0.112,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7
+Side Panel L,2,0.06,150,convection_fan,Fiberglass Batt,50,0.95,13.1,0.48,0.096,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7
+Side Panel R,2,0.06,150,cooling_fan,Fiberglass Batt,50,0.95,13.1,0.48,0.096,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7
+Rear Wall,1,0.08,200,magnetron,Fiberglass Batt,50,0.95,13.1,0.64,0.128,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7
+Bottom Panel,3,0.07,120,transformer,Fiberglass Batt,50,0.95,13.1,0.56,0.112,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7
+Door Inner,2,0.04,180,door_seal,Fiberglass Batt,50,0.95,13.1,0.32,0.064,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7

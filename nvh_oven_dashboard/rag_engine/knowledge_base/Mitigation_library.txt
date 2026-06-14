@@ -1,0 +1,112 @@
+NVH MITIGATION LIBRARY — DOMESTIC OVEN
+=======================================
+Document: NVH-MIT-003 | 42 entries | Rev 4.2
+
+FORMAT: [ID] Source | Mechanism | Fix | Expected dBA | Cost | Difficulty
+=========================================================================
+
+[M01] Source: Convection Fan | Mechanism: Blade-pass frequency (BPF) tonal
+Fix: Optimise blade count from 40 (reduce to 36 or increase to 44, avoiding multiples that excite cavity modes)
+Expected reduction: 2.5–4.0 dBA | Cost: $15–$22/unit | Difficulty: Medium
+Lead time: 10–14 weeks (tooling change)
+Note: Odd blade count reduces tonal purity; skewed blades reduce BPF by ~3 dB
+
+[M02] Source: Convection Fan | Mechanism: Unbalance excitation → structural path
+Fix: Anti-vibration fan mount — rubber grommets 8 Shore-A
+Expected reduction: 1.5–2.5 dBA | Cost: $3–$6/unit | Difficulty: Low
+Lead time: 3–5 weeks
+
+[M03] Source: Convection Fan | Mechanism: Fan aerodynamic noise (broadband)
+Fix: Reduce fan speed 10% + re-match impeller pitch for same airflow
+Expected reduction: 2.0–3.0 dBA | Cost: $1–$3/unit | Difficulty: Low
+Lead time: 2–4 weeks (firmware + validation)
+Physics: Fan noise ∝ (RPM)^5; -10% RPM ≈ -2.2 dBA broadband
+
+[M04] Source: Convection Fan | Mechanism: Duct leakage (airborne path)
+Fix: Flexible boot joint at duct-to-cavity interface + silicone sealing
+Expected reduction: 1.0–2.0 dBA | Cost: $2–$4/unit | Difficulty: Low
+Lead time: 3–4 weeks
+
+[M05] Source: Convection Fan | Mechanism: Duct noise (airborne)
+Fix: Acoustic liner inside fan duct — 25 mm melamine foam
+Expected reduction: 1.5–2.5 dBA | Cost: $5–$8/unit | Difficulty: Medium
+Lead time: 5–8 weeks
+
+[M06] Source: Magnetron | Mechanism: 100 Hz magnetic hum → panel radiation
+Fix: Add magnetron shield mass — 0.3 kg steel plate (mass law)
+Expected reduction: 3.0–5.0 dBA | Cost: $6–$10/unit | Difficulty: Low
+Lead time: 2–3 weeks
+Physics: Mass law IL = 20·log10(m·f·π / ρ₀c₀); +0.25 kg → +6 dB at 100 Hz
+
+[M07] Source: Magnetron | Mechanism: 100 Hz structural radiation from chassis
+Fix: Constrained-layer damping (CLD) patch on magnetron housing
+Expected reduction: 2.0–3.0 dBA | Cost: $4–$7/unit | Difficulty: Medium
+Lead time: 6–10 weeks
+Note: CLD adds structural loss factor η ≈ 0.10–0.20
+
+[M08] Source: Magnetron | Mechanism: Magnetron cavity acoustic leakage
+Fix: Perforated choke flange + conductive foam seal at cavity aperture
+Expected reduction: 1.0–2.0 dBA | Cost: $3–$5/unit | Difficulty: Medium
+Lead time: 4–6 weeks
+
+[M09] Source: Cooling Fan | Mechanism: Axial fan BPF tonal + broadband
+Fix: Replace axial fan with EC centrifugal blower (lower BPF)
+Expected reduction: 2.5–4.0 dBA | Cost: $10–$15/unit | Difficulty: High
+Lead time: 18–24 weeks (new component qualification)
+
+[M10] Source: Cooling Fan | Mechanism: Fan airborne noise through rear grille
+Fix: Rear grille splitter-type muffler insert (reactive + resistive)
+Expected reduction: 1.5–2.5 dBA | Cost: $4–$6/unit | Difficulty: Medium
+Lead time: 6–10 weeks
+
+[M11] Source: Cooling Fan | Mechanism: Grille airborne transmission
+Fix: Foam-backed perforated grille panel (NRC ≈ 0.8)
+Expected reduction: 1.0–1.5 dBA | Cost: $2–$4/unit | Difficulty: Low
+Lead time: 3–5 weeks
+
+[M12] Source: Transformer | Mechanism: 100/200 Hz hum → base plate radiation
+Fix: Resilient transformer isolators — silicone, K = 2000 N/m
+Expected reduction: 2.0–3.0 dBA | Cost: $4–$8/unit | Difficulty: Low
+Lead time: 3–4 weeks
+Physics: fn = √(K/m)/(2π) ≈ 5 Hz; isolation ratio r = 100/5 = 20 → IL ≈ 26 dB
+
+[M13] Source: Transformer | Mechanism: Transformer structural radiation
+Fix: Encapsulate transformer in damped steel housing (1 mm + bitumen)
+Expected reduction: 1.0–2.0 dBA | Cost: $3–$5/unit | Difficulty: Low
+Lead time: 4–6 weeks
+
+[M14] Source: Door Seal | Mechanism: Airborne radiation through door gap
+Fix: Dual-lip EPDM gasket — upgrade from single-lip
+Expected reduction: 1.0–2.0 dBA | Cost: $1.5–$3/unit | Difficulty: Low
+Lead time: 3–5 weeks
+
+[M15] Source: Door Seal | Mechanism: Poor seal contact (low latch pre-load)
+Fix: Increase door latch pre-load spring force by 15%
+Expected reduction: 0.5–1.0 dBA | Cost: $0.5–$1.5/unit | Difficulty: Low
+Lead time: 2 weeks
+
+[M16] Source: Panel Radiation | Mechanism: Top panel resonance mode ~150 Hz
+Fix: Add viscoelastic damping patch (50% coverage, 2 mm)
+Expected reduction: 2.0–3.5 dBA | Cost: $3–$6/unit | Difficulty: Low
+Lead time: 3–5 weeks
+
+[M17] Source: Panel Radiation | Mechanism: Side panel drum mode ~250 Hz
+Fix: Stiffening rib (spot welded, 1.5 mm steel) to shift mode above 400 Hz
+Expected reduction: 1.5–2.5 dBA | Cost: $2–$4/unit | Difficulty: Low
+Lead time: 4–8 weeks (tooling minor change)
+
+[M18] Source: Panel Radiation | Mechanism: Rear panel flexural radiation
+Fix: 2 mm bitumen-backed mass layer bonded to rear panel
+Expected reduction: 2.0–3.0 dBA | Cost: $4–$7/unit | Difficulty: Low
+Lead time: 3–5 weeks
+
+[M19] Source: Broadband | Mechanism: Interior cavity resonances amplify noise
+Fix: Add melamine foam absorption pads inside cavity walls (25 mm, 40% coverage)
+Expected reduction: 1.5–2.5 dBA | Cost: $6–$10/unit | Difficulty: Medium
+Lead time: 5–8 weeks
+
+[M20] Source: Broadband | Mechanism: Control board fan tonal (PWM-induced)
+Fix: Replace PWM control board fan with brushless DC (low BPF)
+Expected reduction: 0.5–1.0 dBA | Cost: $2–$5/unit | Difficulty: Medium
+Lead time: 8–12 weeks
+

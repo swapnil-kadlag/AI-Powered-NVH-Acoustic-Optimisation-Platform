@@ -1,0 +1,90 @@
+# ════════════════════════════════════════════════════════════
+#  NVH AI Dashboard — Docker Compose
+#  Services:
+#    api        — FastAPI REST backend  (port 8000)
+#    dashboard  — Streamlit UI          (port 8501)
+#
+#  Usage:
+#    docker compose up --build          # build + start both
+#    docker compose up api              # API only
+#    docker compose logs -f dashboard   # tail Streamlit logs
+#    docker compose down                # stop + remove containers
+# ════════════════════════════════════════════════════════════
+
+version: "3.9"
+
+services:
+
+  # ── FastAPI REST Backend ──────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    image: nvh-dashboard-api:1.0.0
+    container_name: nvh_api
+    command: >
+      uvicorn api.main:app
+        --host 0.0.0.0
+        --port 8000
+        --workers 2
+        --log-level info
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount simulation outputs so API always reads latest data
+      - ./simulation:/app/simulation:ro
+      - ./data:/app/data:ro
+      - ./competition:/app/competition:ro
+      - ./rag_engine/knowledge_base:/app/rag_engine/knowledge_base:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+    networks:
+      - nvh_net
+
+  # ── Streamlit Dashboard ───────────────────────────────────
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    image: nvh-dashboard-ui:1.0.0
+    container_name: nvh_dashboard
+    command: >
+      streamlit run dashboard/app.py
+        --server.port 8501
+        --server.address 0.0.0.0
+        --server.headless true
+        --server.enableCORS false
+        --server.enableXsrfProtection false
+        --theme.base dark
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./simulation:/app/simulation:ro
+      - ./data:/app/data:ro
+      - ./competition:/app/competition:ro
+      - ./rag_engine/knowledge_base:/app/rag_engine/knowledge_base:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+      # Point the dashboard's agent/RAG queries to the API service
+      - NVH_API_URL=http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - nvh_net
+
+networks:
+  nvh_net:
+    driver: bridge

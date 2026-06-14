@@ -1,0 +1,6 @@
+competitor,brand_code,tier,price_USD,competitor_dBA,our_dBA,dBA_gap,gap_direction,target_dBA,dBA_to_match_competitor,dBA_to_reach_target,competitor_shield_mass,competitor_damping_pct,competitor_air_gap_mm,noise_complaint_gap_pct
+BrandD_BuiltIn,BrandD,Built-in Premium,1200.0,43.5,58.0,14.5,We are LOUDER,52.0,14.5,6.0,0.4,80.0,28.0,17.3
+BrandA_Premium,BrandA,Premium,850.0,46.2,58.0,11.8,We are LOUDER,52.0,11.8,6.0,0.35,75.0,25.0,16.4
+BrandE_NewEntrant,BrandE,Mid-premium,520.0,50.5,58.0,7.5,We are LOUDER,52.0,7.5,6.0,0.28,55.0,20.0,13.7
+BrandB_MidRange,BrandB,Mid-range,450.0,53.8,58.0,4.2,We are LOUDER,52.0,4.2,6.0,0.2,40.0,15.0,10.3
+BrandC_Budget,BrandC,Budget,220.0,60.3,58.0,-2.3,We are quieter,52.0,-2.3,6.0,0.0,0.0,5.0,-13.0

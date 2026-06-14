@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Large generated files (re-generated at runtime)
+reports/NVH_Report_*.pdf
+reports/nvh_report_debug.html
+reports/comprehensive/
+
+# Competition charts (heavy HTMLs)
+competition/chart_*.html
+
+# FAISS index (re-built at runtime)
+rag_engine/index/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/

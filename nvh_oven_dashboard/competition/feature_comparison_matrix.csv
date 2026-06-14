@@ -1,0 +1,7 @@
+﻿product_id,fan_blade_count,has_magnetron_shield,shield_mass_kg,panel_damping_pct,sound_pack,air_gap_mm,isolator_type,isolator_stiffness_Npm,measured_dBA,price_USD,customer_noise_complaints_pct
+OurUnit_MHC,9,False,0.0,0,none,8,rubber_pad,50000,58.0,380,18.5
+BrandA_Premium,11,True,0.35,75,melamine_foam_25mm,25,viscoelastic,3000,46.2,850,2.1
+BrandB_MidRange,9,True,0.2,40,PU_foam_15mm,15,rubber_mount,15000,53.8,450,8.2
+BrandC_Budget,7,False,0.0,0,none,5,none,200000,60.3,220,31.5
+BrandD_BuiltIn,13,True,0.4,80,multi-layer_MLV+foam,28,gel_isolator,1500,43.5,1200,1.2
+BrandE_NewEntrant,11,True,0.28,55,recycled_PET_20mm,20,rubber_composite,8000,50.5,520,4.8

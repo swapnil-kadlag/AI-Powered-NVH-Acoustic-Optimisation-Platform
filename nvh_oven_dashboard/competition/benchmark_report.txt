@@ -1,0 +1,54 @@
+﻿=================================================================
+  NVH COMPETITIVE BENCHMARK REPORT — MHC Oven
+  Generated: 2026-06-06 00:52
+=================================================================
+
+1. EXECUTIVE SUMMARY
+   Our baseline: 58.0 dBA
+   Target:       52.0 dBA  (-6 dBA)
+   Best-in-class:43.5 dBA (BrandD)
+   Market median:52.1 dBA
+   Gap to BIC:   14.5 dBA
+
+2. COMPETITIVE LANDSCAPE (sorted by dBA)
+   Product                   dBA    Price  Tier                  Compliant
+   ─────────────────────────────────────────────────────────────────
+   BrandD_BuiltIn           43.5  $  1200  Built-in Premium      ✅
+   BrandA_Premium           46.2  $   850  Premium               ✅
+   BrandE_NewEntrant        50.5  $   520  Mid-premium           ✅
+   BrandB_MidRange          53.8  $   450  Mid-range             ✅
+   OurUnit_MHC           58.0  $   380  Mid-premium           ✅ ◄ OUR UNIT
+   BrandC_Budget            60.3  $   220  Budget                ❌
+
+3. KEY TECHNOLOGY GAPS
+   [HIGH  ] INCREASE panel damping coverage (%)
+            Our: 0.00  →  BIC: 80.00  (gap: 8000000000000%)
+            Rationale: Damping treatment reduces panel radiation efficiency
+   [HIGH  ] INCREASE magnetron shield mass (kg)
+            Our: 0.00  →  BIC: 0.40  (gap: 40000000000%)
+            Rationale: Heavier shield → better mass law IL for magnetron EM noise
+   [HIGH  ] INCREASE air gap (mm)
+            Our: 8.00  →  BIC: 28.00  (gap: 250%)
+            Rationale: Double-wall effect: cavity resonance provides extra IL
+   [HIGH  ] DECREASE isolator stiffness (N/m)
+            Our: 50000.00  →  BIC: 1500.00  (gap: 97%)
+            Rationale: Softer isolator → better vibration isolation above fn
+   [MEDIUM] INCREASE blade count
+            Our: 9.00  →  BIC: 13.00  (gap: 44%)
+            Rationale: More blades reduce tonal BPF amplitude and spread energy
+
+4. RECOMMENDED PRIORITY ACTIONS
+   Based on gap analysis and NVH physics:
+   1. Magnetron shielding   : Add 0.3 kg electromagnetic shield          → ~3-4 dBA
+   2. Panel damping         : Apply CLD treatment to 60% of panels       → ~2-3 dBA
+   3. Fan upgrade           : Replace 9-blade with 11-blade EC fan       → ~2 dBA
+   4. Transformer isolator  : Switch to soft gel isolator (K=3000 N/m)   → ~1.5 dBA
+   5. Air gap optimization  : Increase liner-outer gap to 20mm           → ~1 dBA
+
+5. COST-BENEFIT SUMMARY
+   Actions above estimated total cost uplift: +$28-35/unit
+   Expected noise reduction:                  -6 dBA
+   Customer complaint reduction (estimated):  -14 pp
+   Estimated return rate improvement:         -1.8 pp
+
+=================================================================

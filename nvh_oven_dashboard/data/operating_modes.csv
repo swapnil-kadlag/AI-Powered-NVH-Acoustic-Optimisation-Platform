@@ -1,0 +1,5 @@
+operating_mode,fan_speed_pct,magnetron_on,overall_dBA,dominant_source,dominant_freq_Hz
+convection_only,100,False,54.2,convection_fan,210
+microwave_only,60,True,55.8,magnetron,120
+combined_mode,100,True,60.0,convection_fan,210
+standby,0,False,28.5,transformer,100

@@ -1,0 +1,9 @@
+material,density_kgm3,thickness_mm,NRC,surface_density_kgm2,cost_per_m2,T_max_C,notes,IL_63Hz,IL_125Hz,IL_250Hz,IL_500Hz,IL_1000Hz,IL_2000Hz,IL_4000Hz,IL_8000Hz,SIL_A_weighted
+Melamine Foam,8.0,25,0.9,0.2,12.0,150,Low density open-cell; excellent absorption,5.0,5.0,5.0,5.0,5.0,9.6,15.6,21.7,2.4
+Fiberglass Batt,32.0,50,0.95,1.6,8.0,350,High-temp; good broadband absorption,5.0,5.0,9.6,15.6,21.7,27.7,33.7,39.7,13.1
+Mass Loaded Vinyl,2000.0,3,0.1,6.0,18.0,80,Heavy limp barrier; mass-law IL,9.1,15.1,21.1,27.1,33.1,39.2,45.2,51.2,23.5
+PU Foam,30.0,20,0.75,0.6,6.0,120,General purpose foam; moderate absorption,5.0,5.0,5.0,7.1,13.1,19.2,25.2,31.2,7.2
+Recycled PET Felt,30.0,25,0.85,0.75,5.0,140,Eco-friendly; good absorption,5.0,5.0,5.0,9.1,15.1,21.1,27.1,33.1,8.4
+Rubber Damping Mat,1800.0,4,0.05,7.2,14.0,120,Constrained-layer damping; reduces panel radiation,12.7,18.7,24.7,30.7,36.7,42.7,48.8,54.8,27.1
+Bitumen Pad,1200.0,2,0.03,2.4,9.0,80,Anti-drum deadener; structural damping,5.0,7.1,13.1,19.2,25.2,31.2,37.2,43.2,16.0
+Air Gap (25 mm),1.2,25,0.0,0.03,0.5,500,Decoupled cavity; reactive IL via impedance mismatch,6.0,7.0,8.0,9.0,9.0,8.0,7.0,6.0,0.9

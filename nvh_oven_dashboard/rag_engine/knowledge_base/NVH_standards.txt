@@ -1,0 +1,64 @@
+﻿NVH STANDARDS FOR DOMESTIC APPLIANCES
+======================================
+Document: NVH-STD-001 | Revision: 3.1 | Date: 2024-01
+
+1. IEC 60704-1: TEST CODE FOR THE DETERMINATION OF AIRBORNE ACOUSTICAL NOISE
+------------------------------------------------------------------------------
+Scope: Household and similar electrical appliances
+Measurement distance: 1.0 m from appliance front face
+Microphone height: 1.0 m (counter-top) or 0.85 m (floor-standing)
+Background noise: At least 6 dB below appliance under test
+Weighting: A-weighted SPL (dBA)
+Quantity reported: LWA (sound power level, dB re 1 pW)
+
+Reference conditions (IEC 60704-1:2021):
+  - Test room: hemi-anechoic, R ≥ 10 m²
+  - Temperature: 23°C ± 2°C
+  - Relative humidity: 50% ± 10%
+
+Limits for microwave ovens (domestic, class B):
+  - Operating mode (microwave only): ≤ 58 dBA at 1 m
+  - Operating mode (convection):     ≤ 60 dBA at 1 m
+  - Combined mode (micro+convection):≤ 62 dBA at 1 m
+  - Standby:                         ≤ 35 dBA at 1 m
+
+Note: Premium segment target (self-imposed engineering target):
+  Combined mode ≤ 52 dBA — 6 dB below regulatory limit.
+  This corresponds to approximately 25% of the acoustic energy
+  of the regulatory limit (energy ratio = 10^(-6/10) ≈ 0.25).
+
+2. ISO 3744: DETERMINATION OF SOUND POWER LEVELS
+--------------------------------------------------
+Method: Engineering grade (Grade 2), free-field over reflecting plane
+Number of microphone positions: 10 (hemisphere, r = 1 m)
+Sound power calculation: LW = Lp_mean + 10·log10(S/S0)
+  where S = measurement surface area, S0 = 1 m²
+
+Measurement uncertainty:
+  - Reproducibility std dev: σR ≤ 1.5 dB (engineering grade)
+  - Expanded uncertainty (k=2): ≤ 3 dB
+
+3. ISO 7779: ACOUSTICS — MEASUREMENT OF AIRBORNE NOISE FROM IT EQUIPMENT
+--------------------------------------------------------------------------
+Applicable to: Oven control electronics, display fans, cooling systems
+Declared sound power level: LWA (A-weighted)
+Measurement uncertainty declaration mandatory in product documentation
+
+4. EU ECODESIGN REGULATION 2021/341
+--------------------------------------
+Category: Microwave ovens ≥ 900W rated power
+Noise emission labelling: Required from 2025
+Energy label noise band: A (≤52 dBA) to G (>68 dBA)
+MHC Oven target band: A (≤52 dBA)
+
+5. FREQUENCY RANGE OF INTEREST
+---------------------------------
+Tonal components to characterise:
+  - Magnetron hum: 100 Hz (mains frequency × 1) + harmonics
+  - Fan blade-pass: BPF = n_blades × RPM / 60
+    Example: 40 blades × 3250 RPM / 60 = 2167 Hz
+  Note: LH+RH combined axial blower configuration
+  - Transformer hum: 100 Hz, 200 Hz
+  - Structural resonances: panel modes typically 80–400 Hz
+  - Aerodynamic broadband: 500–4000 Hz
+

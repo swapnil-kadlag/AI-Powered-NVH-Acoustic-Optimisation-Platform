@@ -1,0 +1,12 @@
+{
+  "fan_blades": 33.55631274701824,
+  "fan_rpm": 2703.110937270652,
+  "panel_damp_pct": 3.0710545514257683,
+  "soundpack_dens": 23.001989310430442,
+  "mag_shield_kg": 0.15,
+  "air_gap_mm": 12.0,
+  "isolator_K": 8000,
+  "dBA_pred": 46.226906146292094,
+  "cost_index_pred": 0.0973754896044895,
+  "dba_reduction": 13.773093853707906
+}

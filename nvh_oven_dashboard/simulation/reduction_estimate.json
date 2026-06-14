@@ -1,0 +1,16 @@
+{
+  "baseline_dba": 60.0,
+  "predicted_dba": 50.8,
+  "total_reduction": 9.2,
+  "target_dba": 52.0,
+  "target_met": true,
+  "budget_used_usd": 33.0,
+  "num_fixes": 5,
+  "selected_fixes": [
+    "Fan speed -10% + impeller re-match",
+    "Duct sealing + flexible boot joint",
+    "Anti-vib mount (8 Shore-A rubber grommets)",
+    "Melamine liner inside fan duct (25 mm)",
+    "Aerodynamic 44-blade skewed redesign"
+  ]
+}

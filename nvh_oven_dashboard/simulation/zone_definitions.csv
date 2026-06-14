@@ -1,0 +1,7 @@
+zone,area_m2,T_limit_C,budget_usd,weight_limit_kg,primary_source,priority
+Top Panel,0.07,250,8.0,0.25,convection_fan,1
+Side Panel L,0.06,150,6.0,0.2,convection_fan,2
+Side Panel R,0.06,150,6.0,0.2,cooling_fan,2
+Rear Wall,0.08,200,9.0,0.3,magnetron,1
+Bottom Panel,0.07,120,5.0,0.2,transformer,3
+Door Inner,0.04,180,4.0,0.1,door_seal,2

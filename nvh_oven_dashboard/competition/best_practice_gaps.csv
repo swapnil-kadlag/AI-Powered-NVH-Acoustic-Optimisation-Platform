@@ -1,0 +1,6 @@
+feature,our_value,best_in_class,gap,gap_pct,action,rationale,priority,estimated_dBA_benefit
+panel damping coverage (%),0.0,80.0,80.0,8000000000000.0,INCREASE panel damping coverage (%),Damping treatment reduces panel radiation efficiency,HIGH,522000000000.0
+magnetron shield mass (kg),0.0,0.4,0.4,40000000000.0,INCREASE magnetron shield mass (kg),Heavier shield → better mass law IL for magnetron EM noise,HIGH,2610000000.0
+air gap (mm),8.0,28.0,20.0,250.0,INCREASE air gap (mm),Double-wall effect: cavity resonance provides extra IL,HIGH,16.3
+isolator stiffness (N/m),50000.0,1500.0,48500.0,97.0,DECREASE isolator stiffness (N/m),Softer isolator → better vibration isolation above fn,HIGH,6.3
+blade count,9.0,13.0,4.0,44.4,INCREASE blade count,More blades reduce tonal BPF amplitude and spread energy,MEDIUM,2.9

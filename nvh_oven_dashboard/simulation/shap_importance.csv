@@ -1,0 +1,5 @@
+feature,mean_abs_shap,rank
+fan_rpm,0.8363358289634557,1
+panel_damp_pct,0.4991265614259185,2
+soundpack_dens,0.27075071231216197,3
+fan_blades,0.03557747966673457,4

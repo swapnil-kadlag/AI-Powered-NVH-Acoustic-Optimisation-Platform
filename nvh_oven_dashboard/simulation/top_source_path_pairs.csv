@@ -1,0 +1,4 @@
+path_id,path_name,path_type,source,ntf_col,coupling_db,source_dba,ntf_mean_db,path_dba,description,path_rank,priority
+S1,Fan Mount → Top Panel,structural,convection_fan,NTF_fan_bracket_dBperN,-2.5,50.5,-15.4,32.6,Fan unbalance → bracket → top panel bending radiation,1,🔴 Critical
+S2,Fan Mount → Side Panels,structural,convection_fan,NTF_fan_bracket_dBperN,-4.0,50.5,-15.4,31.1,Fan vibration → side-wall flexural radiation,2,🟠 High
+A2,Duct Leakage → Sides,airborne,convection_fan,NTF_fan_bracket_dBperN,-6.0,50.5,-15.4,29.1,Fan airborne noise through duct-to-cavity leak,3,🟡 Medium

@@ -1,0 +1,49 @@
+# ── Python cache ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ──────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── Git ───────────────────────────────────────────────────────
+.git/
+.gitignore
+.gitattributes
+
+# ── IDE / editor ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Large / unnecessary data ──────────────────────────────────
+# Raw parquet files are large; CSV versions are sufficient in container
+data/*.parquet
+rag_engine/index/
+
+# ── Reports output (generated at runtime, not needed in image) ─
+reports/NVH_Report_*.pdf
+reports/nvh_report_debug.html
+reports/comprehensive/
+
+# ── Competition chart HTMLs (heavy, not needed for API/dashboard) ──
+competition/chart_*.html
+
+# ── Docker files themselves (avoid recursive context) ─────────
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# ── Docs / non-essential ──────────────────────────────────────
+*.md
+LICENSE

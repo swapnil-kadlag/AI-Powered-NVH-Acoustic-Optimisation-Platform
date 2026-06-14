@@ -1,0 +1,15 @@
+{
+  "total_cost_usd": 3.04,
+  "total_weight_kg": 0.608,
+  "mean_SIL_A_dB": 13.1,
+  "zones_treated": 6,
+  "unique_materials_used": 1,
+  "materials_used": [
+    "Fiberglass Batt",
+    "Fiberglass Batt",
+    "Fiberglass Batt",
+    "Fiberglass Batt",
+    "Fiberglass Batt",
+    "Fiberglass Batt"
+  ]
+}

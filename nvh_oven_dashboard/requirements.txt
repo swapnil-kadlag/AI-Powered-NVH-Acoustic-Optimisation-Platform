@@ -1,0 +1,38 @@
+# ══════════════════════════════════════════════════════════
+#  NVH AI Dashboard — Streamlit Cloud requirements
+#  Python 3.12  |  Only what the dashboard actually imports
+# ══════════════════════════════════════════════════════════
+
+# ── Core ──────────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.1.0
+scipy>=1.11.0
+pyarrow>=14.0.0          # parquet read support
+
+# ── Dashboard ─────────────────────────────────────────────
+streamlit>=1.35.0
+plotly>=5.18.0
+
+# ── ML / Surrogate ────────────────────────────────────────
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+shap>=0.44.0
+pymoo>=0.6.1             # NSGA-II optimizer
+
+# ── Sensitivity analysis ──────────────────────────────────
+SALib>=1.4.7
+
+# ── Agents ────────────────────────────────────────────────
+langgraph>=0.1.0
+langchain-core>=0.2.0
+
+# ── RAG / retrieval ───────────────────────────────────────
+rank-bm25>=0.2.2
+
+# ── Report generation ─────────────────────────────────────
+jinja2>=3.1.0
+markdown>=3.5.0
+weasyprint>=60.0
+
+# ── Utilities ─────────────────────────────────────────────
+python-dotenv>=1.0.0
