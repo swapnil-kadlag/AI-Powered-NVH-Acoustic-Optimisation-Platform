@@ -20,6 +20,7 @@ nvh_oven_dashboard/.env
 
 # Personal / local-only files
 PROJECT_REPORT.md
+PROJECT_REPORT.pdf
 
 # IDE
 .vscode/
