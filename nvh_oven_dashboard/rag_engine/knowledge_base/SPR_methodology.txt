@@ -1,4 +1,4 @@
-﻿SPR METHODOLOGY — SOURCE PATH RECEIVER ANALYSIS
+SPR METHODOLOGY — SOURCE PATH RECEIVER ANALYSIS
 ================================================
 Document: NVH-METH-002 | Revision: 2.0
 

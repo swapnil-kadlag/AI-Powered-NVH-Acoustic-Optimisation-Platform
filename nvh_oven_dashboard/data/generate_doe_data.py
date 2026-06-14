@@ -1,4 +1,4 @@
-﻿"""
+"""
 DOE Simulation Data Generator — MHC Oven
 =============================================
 Generates a lean, statistically correct DOE calibrated against

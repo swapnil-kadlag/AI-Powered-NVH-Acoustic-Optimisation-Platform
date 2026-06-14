@@ -1,4 +1,4 @@
-﻿product,brand_code,price_USD,measured_dBA,tier,market_share_pct,is_target
+product,brand_code,price_USD,measured_dBA,tier,market_share_pct,is_target
 OurUnit_MHC,MHC,380,58.0,Mid-premium,4.2,True
 BrandA_Premium,BrandA,850,46.2,Premium,12.8,False
 BrandB_MidRange,BrandB,450,53.8,Mid-range,18.5,False

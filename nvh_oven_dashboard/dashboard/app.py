@@ -1,4 +1,4 @@
-﻿"""
+"""
 dashboard/app.py — Phase 8: MHC Oven NVH AI Dashboard
 ==========================================================
 Full Streamlit dashboard — 6 tabs, all wired to simulation outputs.

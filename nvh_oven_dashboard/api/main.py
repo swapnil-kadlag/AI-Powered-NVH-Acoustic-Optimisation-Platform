@@ -1,4 +1,4 @@
-﻿"""
+"""
 api/main.py — Phase 7: FastAPI REST Backend
 ============================================
 Exposes all NVH analysis outputs and the multi-agent system

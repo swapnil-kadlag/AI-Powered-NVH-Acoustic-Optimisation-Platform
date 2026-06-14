@@ -1,4 +1,4 @@
-﻿"""
+"""
 agents/nvh_agents.py — Phase 6: LangGraph Multi-Agent NVH System
 =================================================================
 Implements a graph of specialised NVH analysis agents that collaborate

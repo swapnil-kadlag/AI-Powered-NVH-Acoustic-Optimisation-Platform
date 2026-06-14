@@ -1,4 +1,4 @@
-﻿"""
+"""
 Competitive Benchmarking Module — NVH AI Dashboard
 ====================================================
 Extracts and synthesizes competitor NVH data for microwave/convection ovens.

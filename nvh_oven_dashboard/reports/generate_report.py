@@ -1,4 +1,4 @@
-﻿"""
+"""
 reports/generate_report.py — Phase 9: PDF Report Generator
 ===========================================================
 Renders a multi-page NVH analysis PDF using Jinja2 HTML template

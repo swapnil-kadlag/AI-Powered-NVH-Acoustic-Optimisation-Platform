@@ -1,4 +1,4 @@
-﻿"""
+"""
 rag_engine/rag_pipeline.py — Phase 5: NVH Knowledge RAG Engine
 ===============================================================
 Hybrid retrieval-augmented generation pipeline:

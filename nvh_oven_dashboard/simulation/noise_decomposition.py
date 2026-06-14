@@ -1,4 +1,4 @@
-﻿"""
+"""
 noise_decomposition.py — Phase 2: NVH Source-Path-Receiver Engine
 ==================================================================
 Performs full SPR (Source-Path-Receiver) noise decomposition for

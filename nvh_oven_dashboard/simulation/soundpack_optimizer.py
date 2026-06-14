@@ -1,4 +1,4 @@
-﻿"""
+"""
 soundpack_optimizer.py — Phase 4: Sound Package Zone Optimizer
 ===============================================================
 Selects optimal acoustic treatment materials for each oven panel zone

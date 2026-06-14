@@ -1,4 +1,4 @@
-﻿"""
+"""
 NVH Measurement Data Generator — MHC Oven
 ==============================================
 Generates physically plausible synthetic data comparable to real

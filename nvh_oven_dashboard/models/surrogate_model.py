@@ -1,4 +1,4 @@
-﻿"""
+"""
 surrogate_model.py — Phase 3: ML Surrogate + Multi-objective Optimizer
 =======================================================================
 Trains RF & XGBoost surrogates on Phase-1 DOE data (4 active factors),

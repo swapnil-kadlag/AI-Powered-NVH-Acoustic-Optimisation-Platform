@@ -1,4 +1,4 @@
-﻿"""
+"""
 Benchmark Analysis & Visualization — NVH AI Dashboard
 ======================================================
 Loads competitor data and generates:

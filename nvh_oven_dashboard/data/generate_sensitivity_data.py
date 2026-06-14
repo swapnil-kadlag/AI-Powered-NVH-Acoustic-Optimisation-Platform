@@ -1,4 +1,4 @@
-﻿"""
+"""
 Sensitivity Analysis — MHC Oven
 =====================================
 Sobol / Morris / PCC over the 4 ACTIVE design variables.
