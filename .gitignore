@@ -18,6 +18,9 @@ nvh_oven_dashboard/env
 nvh_oven_dashboard/.env
 *.env
 
+# Personal / local-only files
+PROJECT_REPORT.md
+
 # IDE
 .vscode/
 .idea/
