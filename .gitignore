@@ -13,6 +13,11 @@ venv/
 env/
 .env
 
+# API keys / secrets
+nvh_oven_dashboard/env
+nvh_oven_dashboard/.env
+*.env
+
 # IDE
 .vscode/
 .idea/
